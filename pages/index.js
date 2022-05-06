@@ -67,7 +67,7 @@ const Index = ({posts, project}) => {
                 <title>Web Developer and Digital Marketer, TechnicalDee</title>
             </Head>
             <div id="card" className='flex items-center justify-center w-full shadow-2xl rounded-xl'>
-                <div className='w-3/4 p-6 space-y-3 h-4/5 md:flex lg:flex md:space-y-0 lg:space-y-0 md:space-x-4 lg:space-x-4'>
+                <div className='w-3/4 px-0 py-6 space-y-3 md:p-6 lg:p-6 h-4/5 md:flex lg:flex md:space-y-0 lg:space-y-0 md:space-x-4 lg:space-x-4'>
                         <img src="/edidiong.png" width="240" height="240" />
                         <div id="bio"className='flex flex-col justify-center space-y-4'>
                             <p className='text-4xl font-bold'>Edidiong Udoh (🛠 Dee)</p>
