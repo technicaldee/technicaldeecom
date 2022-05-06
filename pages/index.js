@@ -2,12 +2,69 @@ import Link from 'next/link'
 import groq from 'groq'
 import client from '../client'
 import Head from 'next/head'
+import { NextSeo } from 'next-seo';
 
 const Index = ({posts, project}) => {
     return (
         <>
+            <NextSeo
+                title="Web Developer and Digital Marketer, TechnicalDee"
+                description="Get your Web application setup and get expert social management with TechnicalDee"
+                openGraph={{
+                    type: 'website',
+                    url: 'https://www.technicaldee.com',
+                    title: 'Web Developer and Digital Marketer, TechnicalDee',
+                    description: 'Get your Web application setup and get expert social management with TechnicalDee',
+                    images: [
+                      {
+                        url: 'https://www.technicaldee.com/edidiong.png',
+                        width: 800,
+                        height: 600,
+                        alt: 'Edidiong Udoh',
+                      },
+                    ],
+                  }}
+            />
+            <FAQPageJsonLd
+                mainEntity={[
+                    {
+                    questionName: 'How long is the delivery time?',
+                    acceptedAnswerText: '7-15 business days.',
+                    },
+                    {
+                    questionName: 'Where can I find information about your services?',
+                    acceptedAnswerText: 'Read more on our website.',
+                    },
+                ]}
+            />
+            <LogoJsonLd
+                logo="http://www.technicaldee.com/logo.png"
+                url="http://www.technicaldee.com"
+             />
+             <SocialProfileJsonLd
+                type="Person"
+                name="Edidiong Udoh"
+                url="http://www.technicaldee.com"
+                sameAs={[
+                    'http://instagram.com/technicaldee',
+                    'http://www.linkedin.com/in/technicaldee',
+                ]}
+            />
+            <DefaultSeo
+                openGraph={{
+                    type: 'website',
+                    locale: 'en_NG',
+                    url: 'https://www.technicaldee.com/',
+                    site_name: 'TechnicalDee',
+                }}
+                twitter={{
+                    handle: '@technicaldee',
+                    site: '@technicaldee',
+                    cardType: 'summary_large_image',
+                }}
+            />
             <Head>
-                <title>Home - TechnicalDee</title>
+                <title>Web Developer and Digital Marketer, TechnicalDee</title>
             </Head>
             <div id="card" className='flex items-center justify-center w-full shadow-2xl rounded-xl'>
                 <div className='w-3/4 p-6 space-y-3 h-4/5 md:flex lg:flex md:space-y-0 lg:space-y-0 md:space-x-4 lg:space-x-4'>
