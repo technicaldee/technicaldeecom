@@ -2,7 +2,7 @@ import Link from 'next/link'
 import groq from 'groq'
 import client from '../client'
 import Head from 'next/head'
-import { NextSeo } from 'next-seo';
+import { NextSeo, FAQPageJsonLd, LogoJsonLd, SocialProfileJsonLd, DefaultSeo } from 'next-seo';
 
 const Index = ({posts, project}) => {
     return (
