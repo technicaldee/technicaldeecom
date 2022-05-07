@@ -73,7 +73,7 @@ const Index = ({posts, project}) => {
                             <p className='text-4xl font-bold'>Edidiong Udoh (🛠 Dee)</p>
                             <div id='cta' className='my-4 space-x-4'>
                                 <a href='/resume.pdf' className='p-2 px-4 text-white rounded-xl bg-brand hover:bg-indigo-500 '> Resume</a>
-                                <Link href='mailto:technical@technicaldee.com'><span className='p-2 px-4 text-black border-2 cursor-pointer rounded-xl border-brand hover:bg-indigo-100'>Get In Touch</span></Link>
+                                <Link href='mailto:technical@technicaldee.com'><span className='p-2 px-4 text-black border-2 cursor-pointer rounded-xl border-brand hover:bg-indigo-100'>Contact</span></Link>
                             </div>
                             <p className='text-lg font-light'>
                                 I am a <b>Software Developer</b>, <b>Digital Marketer</b> and <b>Content Creator</b> based in Nigeria. My favourite technologies are React (JavaScript) and Laravel(PHP).
@@ -175,8 +175,8 @@ const Index = ({posts, project}) => {
                 </div>
             </div>
 
-            <div>
-                
+            <div className='mt-6  text-brand'>
+                <center>Made with 👌 <b>in Uyo</b> by <a href="https://technicaldee.com">TechnicalDee</a></center>
             </div>
         </>
     )
