@@ -134,7 +134,7 @@ const Index = ({posts, project}) => {
                     <p className='text-4xl font-bold'>My Work</p>
 
                     <div className='grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-2'>
-                        {project.length > 0 && project.map(
+                        {project.map(
                         ({ _id, title = '', slug = '', link = '', publishedAt = '' }) =>
                             slug && (
                             <div className='w-full p-4 shadow-xl rounded-xl' key={_id}>
@@ -184,11 +184,11 @@ const Index = ({posts, project}) => {
 
 export async function getServerSideProps() {
     const posts = await client.fetch(groq`
-      *[_type == "post" && publishedAt < now()] | order(publishedAt desc)
+      *[_type == "post"] | order(publishedAt desc)
     `)
 
     const project = await client.fetch(groq`
-      *[_type == "project" && publishedAt < now()] | order(publishedAt desc)
+      *[_type == "project"] | order(publishedAt desc)
     `)
 
     return {
