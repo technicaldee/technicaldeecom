@@ -131,7 +131,7 @@ const Index = ({ posts , project  })=>{
                 id: "card",
                 className: "flex items-center justify-center w-full shadow-2xl rounded-xl",
                 children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                    className: "w-3/4 px-0 py-6 space-y-3 md:p-6 lg:p-6 h-4/5 md:flex lg:flex md:space-y-0 lg:space-y-0 md:space-x-4 lg:space-x-4",
+                    className: "w-full py-6 mx-4 space-y-3 md:p-6 lg:p-6 h-4/5 md:flex lg:flex md:space-y-0 lg:space-y-0 md:space-x-4 lg:space-x-4 md:w-3/4 lg:w-3/4",
                     children: [
                         /*#__PURE__*/ jsx_runtime_.jsx("img", {
                             src: "/edidiong.png",
@@ -253,7 +253,7 @@ const Index = ({ posts , project  })=>{
                 id: "services",
                 className: "flex justify-center",
                 children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                    className: "w-4/5 space-y-6",
+                    className: "w-full m-4 space-y-6 md:w-4/5 lg:4/5",
                     children: [
                         /*#__PURE__*/ jsx_runtime_.jsx("p", {
                             className: "text-4xl font-bold",
@@ -289,7 +289,7 @@ const Index = ({ posts , project  })=>{
                 id: "projects",
                 className: "flex justify-center",
                 children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                    className: "w-4/5 space-y-6",
+                    className: "w-full m-4 space-y-6 md:w-4/5 lg:w-4/5",
                     children: [
                         /*#__PURE__*/ jsx_runtime_.jsx("p", {
                             className: "text-4xl font-bold",
@@ -316,7 +316,7 @@ const Index = ({ posts , project  })=>{
                 id: "blog",
                 className: "flex justify-center",
                 children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                    className: "w-4/5 space-y-6",
+                    className: "w-full m-4 space-y-6 md:w-4/5 lg:w-4/5",
                     children: [
                         /*#__PURE__*/ jsx_runtime_.jsx("p", {
                             className: "text-4xl font-bold",

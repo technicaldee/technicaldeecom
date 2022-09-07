@@ -67,7 +67,7 @@ const Index = ({posts, project}) => {
                 <title>Web Developer and Digital Marketer, TechnicalDee</title>
             </Head>
             <div id="card" className='flex items-center justify-center w-full shadow-2xl rounded-xl'>
-                <div className='w-3/4 px-0 py-6 space-y-3 md:p-6 lg:p-6 h-4/5 md:flex lg:flex md:space-y-0 lg:space-y-0 md:space-x-4 lg:space-x-4'>
+                <div className='w-full py-6 mx-4 space-y-3 md:p-6 lg:p-6 h-4/5 md:flex lg:flex md:space-y-0 lg:space-y-0 md:space-x-4 lg:space-x-4 md:w-3/4 lg:w-3/4'>
                         <img src="/edidiong.png" width="240" height="240" />
                         <div id="bio"className='flex flex-col justify-center space-y-4'>
                             <p className='text-4xl font-bold'>Edidiong Udoh (🛠 Dee)</p>
@@ -108,7 +108,7 @@ const Index = ({posts, project}) => {
             </div>
 
             <div id='services' className='flex justify-center'>
-                <div className='w-4/5 space-y-6'>
+                <div className='w-full m-4 space-y-6 md:w-4/5 lg:4/5'>
                     <p className='text-4xl font-bold'>Services I Provide</p>
 
                     <div className='grid grid-cols-1 gap-3 md:grid-cols-3 lg:grid-cols-3'>
@@ -130,7 +130,7 @@ const Index = ({posts, project}) => {
             </div>
 
             <div id='projects' className='flex justify-center'>
-                <div className='w-4/5 space-y-6'>
+                <div className='w-full m-4 space-y-6 md:w-4/5 lg:w-4/5'>
                     <p className='text-4xl font-bold'>My Work</p>
 
                     <div className='grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-2'>
@@ -150,7 +150,7 @@ const Index = ({posts, project}) => {
             </div>
 
             <div id='blog' className='flex justify-center'>
-                <div className='w-4/5 space-y-6'>
+                <div className='w-full m-4 space-y-6 md:w-4/5 lg:w-4/5'>
                     <p className='text-4xl font-bold'>What's New?</p>
 
                     <div id='categories' className='hidden my-4 space-x-4'>
@@ -175,7 +175,7 @@ const Index = ({posts, project}) => {
                 </div>
             </div>
 
-            <div className='mt-6  text-brand'>
+            <div className='mt-6 text-brand'>
                 <center>Made with 👌 <b>in Uyo</b> by <a href="https://technicaldee.com">TechnicalDee</a></center>
             </div>
         </>
