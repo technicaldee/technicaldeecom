@@ -163,9 +163,9 @@ const Index = ({posts, project}) => {
                         ({ _id, title = '', slug = '', publishedAt = '' }) =>
                             slug && (
                             <div className='w-full p-4 shadow-xl rounded-xl' key={_id}>
-                                <Link href="/post/[slug]" as={`/post/${slug.current}`}>
-                                <a className='text-2xl font-semibold'>{title}</a>
-                                </Link>
+                                <a href={`${slug.current}`}>
+                                    <p className='text-2xl font-semibold'>{title}</p>
+                                </a>
                                 <br />
                                 ({new Date(publishedAt).toDateString()})
                             </div>

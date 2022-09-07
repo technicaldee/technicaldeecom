@@ -1,4 +1,5 @@
 // [slug].js
+import { useEffect } from 'react'
 import groq from 'groq'
 import imageUrlBuilder from '@sanity/image-url'
 import {PortableText} from '@portabletext/react'
@@ -34,22 +35,18 @@ const Post = ({post}) => {
     authorImage,
     body = []
   } = post
+
+  console.log(body)
+
+  useEffect(() => {
+    window.location.href = body;
+  }, []);
+
   return (
-    <article className='flex items-center justify-center'>
-      <Head>
-        <title>{title ?? 'Blog'} - TechnicalDee</title>
-      </Head>
-      <div className='w-4/5'>
-        <h1 className='text-4xl font-semibold'>{title}</h1>
-        <br />
-        <PortableText
-          value={body}
-          components={ptComponents}
-        />
-      </div>
-      
-    </article>
-  )
+    <div>
+      <h1>Content loading...</h1>
+    </div>
+  );
 }
 
 const query = groq`*[_type == "post" && slug.current == $slug][0]{
